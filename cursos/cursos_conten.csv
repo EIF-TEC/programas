@@ -50,3 +50,41 @@ IFI0402,"
 && Absorción, fotoconductividad y efecto fotoeléctrico.
 && Dispositivos opto electrónicos y sensores.
 "
+IFI0503,"
+& Introducción a la adquisición de datos y el entorno de LabView
+&& Tipos de señales
+&& Acondicionamiento de señales
+&& Entorno de LabView
+& Implementación de un instrumento virtual básico y su interfaz de usuario
+&& Mediciones de corriente y voltaje usando la NI MyDAQ
+&& Interfaz básica para medición de corriente y voltaje
+& Estructuras de datos 
+&& Cadenas (ASCII)
+&& Numéricos (punto flotante, punto fijo, enteros)
+&& Booleanos
+&& Arreglos
+&& Clústers
+&& Enums
+&& Mediciones multicanal y multimuestral.
+& Estructuras de ejecución
+&& While
+&& For
+&& Casos
+&& Túneles
+&& Mediciones temporizadas detenidas programáticamente
+& Manejo de archivos y protocolos de comunicación serial 
+&& Guardado de datos medidos en archivos
+&& Comunicación serial básica entre dos dispositivos
+&& Comunicación con sensores usando protocolo I2C o SPI
+& Máquinas de estados 
+&& Definición de estados con enums
+&& Estructura de ejecución por casos para máquinas de estados
+&& Medición basada en máquina de estados
+& Aplicaciones modulares
+&& Definición e integración de módulos
+&& Sistema de medición modular
+& Sistemas integrados de medición
+&& SCPI (USB o GPIB)
+&& Control de instrumentos externos
+&& Control de actuadores externos
+"

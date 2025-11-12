@@ -597,6 +597,7 @@ def generar_programa(id):
     subprocess.run(f'move "C:\\Repositories\\IF\\programas\\{codCurso}.pdf" "C:\\Repositories\\IF\\programas\\IFI-{id[3:7]}-{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
 
 generar_programa("IFI0402") #Intrumentación I
+generar_programa("IFI0503") #Intrumentación II
 
 
 subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.tex"], shell=True, check=True)
