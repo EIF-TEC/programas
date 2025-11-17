@@ -1,90 +1,100 @@
 id,contenidos
 IFI0402,"
-& Introducción a la instrumentación industrial
-&& Conceptos básicos. 
-&& Características de los instrumentos de medición. 
-&& Sistemas de magnitudes y unidades: SMU – ISQ – IS.
-&& Simbología de instrumentos: normas ANSI/ISA.
-& Medidas de temperatura
-&& Medición de temperatura.
-&& Termómetros: vidrio y bimetálico, 
-&& Sensores: termopar, RTD, termistor y pirómetros.
-&& Criterios de selección de medidores de temperatura.
-& Medidas de presión
-&& Repaso de conceptos básicos sobre la Presión.
-&& Medidores de Presión Industriales:
-&&& Métodos de medición
-&&& Medidores de columna de líquido
-&&& Manómetros mecánicos
-&&& Transmisores de presión: piezoresistivos, capacitivos y diferencial. 
-&&& Sensores de presión MEMS
-&& Especificaciones de transmisores de presión.
-&& Comparación de especificaciones.
-& Medidas de nivel
-&& Tecnologías para medición de nivel.
-&& Medidores de nivel industriales: 
-&&& Medición directa de nivel
-&&& Medición de presión hidrostática 
-&&& Medición por presión diferencial.
-&&& Medidor capacitivo
-&&& Medidor ultrasónico
-&&& Medidor por radar
-&&& Punto vibrónico
-&&& Radiométrico
-&& Comparación de especificaciones.
-& Medidas de fuerza y vibración
-&& Galgas extensiométricas
+& Conceptos básicos
+&& Señales, estímulos y sistemas
+&& Modelos y simulaciones
+&& Sensores, actuadores y transductores
+&& Clasificaciones
+& Características de los transductores 
+&& Función de transferencia
+&& Entrada y salida a escala completa
+&& Exactitud y precisión
+&& Repetibilidad y reproducibilidad
+&& Histéresis y no linealidad
+&& Saturación y banda muerta
+&& Resolución
+&& Impedancia de salida
+&& Excitación
+&& Características dinámicas 
+&& Confiabilidad e incertidumbre
+& Transductores térmicos
+&& Bimetales
+&& Termoresistivos
+&& Termoeléctricos
+&& Termomecánicos
+&& Inductivos y microondas para calentamiento
+& Transductores ópticos
+&& Fotoconductores
+&& Fotodiodos 
+&& Fototransistores
+&& Fotovoltaicos
+&& Piroeléctricos y termopilas para radiación térmica
+& Transductores eléctricos y magnéticos
+&& Capacitivos
+&& Inductivos
+&& Efecto Hall
+&& Magnetohidrodinámicos
+&& Magnetoresistivos
+&& Magnetrostrictivos
+&& Magnetómetros
+&& Piezoelectricos
+&& Piezoresistivos
+&& Voltaje, corriente y resistencia
+&& Motores
+&& Solenoides
+& Transductores mecánicos
+&& Galgas extensiometricas
 && Celdas de carga
-&& Especificaciones de celdas de carga
 && Acelerómetros
-&&& Sistema masa-resorte-amortiguador
-&&& Especificaciones técnicas
-&& Acelerómetros piezoeléctricos
-&& Acelerómetros piezoresistivos
-&& Acelerómetros capacitivos
-& Medidas de propiedades ópticas
-&& Espectro electromagnético y óptico.
-&& Conceptos básicos de las ondas.
-&& Refracción, reflexión, atenuación y dispersión.
-&& Transmisión, fuentes y detectores de luz.
-&& Absorción, fotoconductividad y efecto fotoeléctrico.
-&& Dispositivos opto electrónicos y sensores.
+&& Sensores de presión
+&& Velocidad
+&& Giroscopios
+& Transductores acústicos
+&& Micrófonos e hidrófonos
+&& Parlantes
+&& Ultrasónicos
+& Transductores químicos
+&& Electroquímicos
+&& Potenciométricos
+&& Termoquímicos
+& Transductores de radiación
+&& Ionizante
+&& Microondas
+& Transductores MEMS
+&& Métodos de fabricación
+&& Unidades de medición inercial (IMU)
+&& Sensores de presión
+&& Micrófonos 
+&& Interruptores ópticos
+& Interfaces de los transductores
+&& Amplificadores operacionales
+&& Amplificadores de potencia
+&& PWMs para actuadores
+&& Convertidores A/D y D/A
+&& Puentes
+&& Transmisión de datos
+&& Excitadores
+&& Ruido e interferencia
 "
 IFI0503,"
-& Introducción a la adquisición de datos y el entorno de LabView
-&& Tipos de señales
+& Sistemas de adquisición de datos
+&& Arquitectura básica
+&& Transductores analógicos y digitales
 && Acondicionamiento de señales
-&& Entorno de LabView
-& Implementación de un instrumento virtual básico y su interfaz de usuario
-&& Mediciones de corriente y voltaje usando la NI MyDAQ
-&& Interfaz básica para medición de corriente y voltaje
-& Estructuras de datos 
-&& Cadenas (ASCII)
-&& Numéricos (punto flotante, punto fijo, enteros)
-&& Booleanos
-&& Arreglos
-&& Clústers
-&& Enums
-&& Mediciones multicanal y multimuestral.
-& Estructuras de ejecución
-&& While
-&& For
-&& Casos
-&& Túneles
-&& Mediciones temporizadas detenidas programáticamente
-& Manejo de archivos y protocolos de comunicación serial 
-&& Guardado de datos medidos en archivos
-&& Comunicación serial básica entre dos dispositivos
-&& Comunicación con sensores usando protocolo I2C o SPI
-& Máquinas de estados 
-&& Definición de estados con enums
-&& Estructura de ejecución por casos para máquinas de estados
-&& Medición basada en máquina de estados
-& Aplicaciones modulares
-&& Definición e integración de módulos
-&& Sistema de medición modular
-& Sistemas integrados de medición
-&& SCPI (USB o GPIB)
+&& A/D: muestreo, cuantización y codificación
+&& D/A: decodificación y filtrado
+&& Interfaz de transductores con DAQs y microcontroladores
+& Instrumentos virtuales
+&& Estructuras de datos
+&& Estructuras de ejecución
+&& Máquinas de estados
+&& Guardado de archivos
+&& Interfaces gráficas
+&& Comunicación serial y USB
 && Control de instrumentos externos
-&& Control de actuadores externos
+& Simbología y metrología de instrumentación
+&& Norma ISA 51
+&& Calibración y trazabilidad
+&& Verificación y validación
+&& Propagación de incertidumbres
 "
