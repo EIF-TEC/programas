@@ -591,19 +591,19 @@ def generar_programa(id):
         ,proImpar])
     doc.append(proCurso)
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
-    subprocess.run(["biber", f"C:\\Repositories\\IF\\programas\\{codCurso}"])
+    subprocess.run(["biber", f"C:\\Repositories\\programas\\programas\\{codCurso}"])
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
-    subprocess.run(f'move "C:\\Repositories\\IF\\programas\\{codCurso}.pdf" "C:\\Repositories\\IF\\programas\\IFI-{id[3:7]}-{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
+    subprocess.run(f'move "C:\\Repositories\\programas\\programas\\{codCurso}.pdf" "C:\\Repositories\\programas\\programas\\IFI-{id[3:7]}-{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
 
 generar_programa("IFI0402") #Intrumentación I
 generar_programa("IFI0503") #Intrumentación II
 
 
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.tex"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.aux"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.bbl"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.bcf"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.blg"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.log"], shell=True, check=True)
-subprocess.run(["del", f"C:\\Repositories\\IF\\programas\\*.run.xml"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.tex"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.aux"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.bbl"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.bcf"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.blg"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.log"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\programas\\programas\\*.run.xml"], shell=True, check=True)
